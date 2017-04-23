@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jyotiprakash.bluetoothapplication.MainActivity"
+    >
+
+
+    <Button
+        android:id="@+id/btnONOFF"
+        android:layout_width="match_parent"
+        android:text="ON/OFF Bluetooth"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="36dp" />
+
+    <Button
+        android:id="@+id/btnDiscoverable"
+        android:layout_width="match_parent"
+        android:text="Make Device Discoverable"
+        android:layout_below="@+id/btnONOFF"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="36dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Discover Devices"
+        android:layout_below="@+id/btnDiscoverable"
+        android:id="@+id/btnFindDevicesToPair"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/viewLine"
+        android:layout_below="@+id/btnFindDevicesToPair"
+        android:background="#d13033"/>
+
+    <ListView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewLine"
+        android:id="@+id/deviceListView"/>
+</RelativeLayout>
